@@ -35,6 +35,7 @@ Vamos entender primeiro os conceitos de <b>SPA</b> e <b>SSR</b>:
 Quando realizamos aplicações com react tradicional as interfaces são construídas pelo browser (SPA) e carregam seu conteúdo através de bundles, desta forma, motores de buscam podem ter problemas ao tentarem indexar conteúdo. Com o <b>Next.js</b> o código que renderiza a interface é executada por um servidor Node.js, o cliente vai ficar aguardando até o processo ser concluído. 
 
 > O Next.js surgiu por conta do SSR, porém atualmente ele entrega muito além e é uma poderosa ferramenta para o front-end.
+
 <br>
 <hr>
 
@@ -56,6 +57,22 @@ Arquivo _app é um componente que está por volta de todos outros componentes. T
 Arquivo _document é como se fosse o index em um projeto com React, nele serão feitas as implementações de coisas que ficarão estáticas mesmo ao trocar rota.
 
 > Arquivos como _app e _document não viram rotas.
+
+>Para consumir uma api via SSR e não no CSR (client side rendering) é necessário que a chamada seja feita em uma página no Next e não em components. 
+
+Exemplo:
+
+```bash
+import {GetServerSideProps} from 'next'
+
+export const getServerSideProps: GetServerSideProps = async() => {
+  return {
+    
+  }
+}
+```
+> Todo o código dentro da function getServerSideProps será executado dentro do servidor node.
+
 <br>
 <hr>
 
@@ -83,8 +100,6 @@ O ideal é proporcionar aos projetos a estratégia de botar as estilizações em
 
 <br>
 <hr>
-
-
 
 
 
