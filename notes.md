@@ -21,20 +21,56 @@ Crawler, é um robô usado pelos buscadores para encontrar e indexar páginas de
 
 O grande problema é que muitos desses robôs, realizam essa "varredura" com a função de javascript desligada e ou não podem esperar o javascript renderizar os elementos dificultando tanto o SEO quanto usuários que possuem dispositivos móveis antigos e ou conexões fracas.
 
-Vamos entender primeiro os conceitos de <b>SPA</b> e <b>SSR</b>:
+Quando realizamos aplicações com react tradicional as interfaces são construídas pelo browser (SPA) e carregam seu conteúdo através de bundles, desta forma, motores de buscam podem ter problemas ao tentarem indexar conteúdo. Com o <b>Next.js</b> o código que renderiza a interface é executada por um servidor Node.js, o cliente vai ficar aguardando até o processo ser concluído. 
+
+Vamos entender os conceitos de <b>SPA</b>, <b>SSR</b> & <b>SSG</b>:
 <br>
 
 <b>SPA (Single-page Application)</b>: São sempre executadas do lado do cliente (browser). O conteúdo de uma aplicação SPA é carregado completamente logo na primeira requisição. Exemplo: Github até a data que este conteúdo foi escrito.
 <br>
-<p align="center"><img alt="Fluxograma SPA" src="./spa.png" width="55%" /></p>
+<p align="center"><img alt="Fluxograma SPA" src="./public/extras/spa.png" width="55%" /></p>
 
-<b>SSR (Server-side Rendering)</b>: O SSR é utilizado para resolver alguns dos problemas das aplicações SPAs porém, tentando manter suas principais vantagens. O SSR inverte o processo de renderização, trazendo uma parte do esforço de renderização de aplicações SPA para o servidor, de maneira similar ao carregamento tradicional.
+<b>SSR (Server-side Rendering)</b>: O SSR é utilizado para resolver alguns dos problemas das aplicações SPAs porém, tentando manter suas principais vantagens. O SSR inverte o processo de renderização, trazendo uma parte do esforço de renderização de aplicações SPA para o servidor, de maneira similar ao carregamento tradicional. Mais dinâmico porém menos performático SSR é usado majoritariamente quando é necessário indexação e quando é preciso de dados dinâmicos como por exemplo: Informações em tempo real sobre usuário.
 <br>
-<p align="center"><img alt="Fluxograma SPA" src="./ssr.png" width="55%" /></p>
+<p align="center"><img alt="Fluxograma SSR" src="./public/extras/ssr.png" width="55%" /></p>
 
-Quando realizamos aplicações com react tradicional as interfaces são construídas pelo browser (SPA) e carregam seu conteúdo através de bundles, desta forma, motores de buscam podem ter problemas ao tentarem indexar conteúdo. Com o <b>Next.js</b> o código que renderiza a interface é executada por um servidor Node.js, o cliente vai ficar aguardando até o processo ser concluído. 
+>Para consumir uma api via SSR e não no CSR (client side rendering) é necessário que a chamada seja feita em uma página no Next e não em um component. 
 
-> O Next.js surgiu por conta do SSR, porém atualmente ele entrega muito além e é uma poderosa ferramenta para o front-end.
+Exemplo:
+
+```bash
+import {GetServerSideProps} from 'next'
+
+export const getServerSideProps: GetServerSideProps = async() => {
+  return {
+    props: {
+      any,
+    }
+  }
+}
+```
+> Todo o código dentro da function getServerSideProps será executado dentro do servidor node.
+
+<b>SSG (Static Site Genaration)</b>: O SSG passa por um processo bem semelhante do SSR, porem em suas ultimas etapas, ele cria um arquivo HTML estático que ficará salvo e é servido para um próximo acesso no client. Menos dinâmico e mais performático SSG é usado majoritariamente quando é necessário indexação e também gerar um HTML para muitos acessos. EX: Home de um blog.
+<br>
+<p align="center"><img alt="Fluxograma SSG" src="./public/extras/ssg.png" width="55%" /></p>
+
+Exemplo:
+
+```bash
+import {GetStaticProps} from 'next'
+
+export const getStaticProps: GetStaticProps = async() => {
+  return {
+    props: {
+      any,
+    },
+    revalidate: tempo.
+  }
+}
+```
+
+> O revalidate é a cadência em tempo que o Next vai salvar o novo HTML para servir ao client.
 
 <br>
 <hr>
@@ -57,21 +93,6 @@ Arquivo _app é um componente que está por volta de todos outros componentes. T
 Arquivo _document é como se fosse o index em um projeto com React, nele serão feitas as implementações de coisas que ficarão estáticas mesmo ao trocar rota.
 
 > Arquivos como _app e _document não viram rotas.
-
->Para consumir uma api via SSR e não no CSR (client side rendering) é necessário que a chamada seja feita em uma página no Next e não em components. 
-
-Exemplo:
-
-```bash
-import {GetServerSideProps} from 'next'
-
-export const getServerSideProps: GetServerSideProps = async() => {
-  return {
-    
-  }
-}
-```
-> Todo o código dentro da function getServerSideProps será executado dentro do servidor node.
 
 <br>
 <hr>
@@ -100,6 +121,7 @@ O ideal é proporcionar aos projetos a estratégia de botar as estilizações em
 
 <br>
 <hr>
+
 
 
 
