@@ -30,6 +30,17 @@ Vamos entender os conceitos de <b>SPA</b>, <b>SSR</b> & <b>SSG</b>:
 <br>
 <p align="center"><img alt="Fluxograma SPA" src="./public/extras/spa.png" width="55%" /></p>
 
+>Consumindo api utilizando SPA:
+```bash
+
+useEffect(()=> {
+fetch('url')
+.then(response => response.json())
+.then(data => console.log(data))
+}, [])
+
+```
+
 <b>SSR (Server-side Rendering)</b>: O SSR é utilizado para resolver alguns dos problemas das aplicações SPAs porém, tentando manter suas principais vantagens. O SSR inverte o processo de renderização, trazendo uma parte do esforço de renderização de aplicações SPA para o servidor, de maneira similar ao carregamento tradicional. Mais dinâmico porém menos performático SSR é usado majoritariamente quando é necessário indexação e quando é preciso de dados dinâmicos como por exemplo: Informações em tempo real sobre usuário.
 <br>
 <p align="center"><img alt="Fluxograma SSR" src="./public/extras/ssr.png" width="55%" /></p>
@@ -39,16 +50,19 @@ Vamos entender os conceitos de <b>SPA</b>, <b>SSR</b> & <b>SSG</b>:
 Exemplo:
 
 ```bash
-import {GetServerSideProps} from 'next'
 
-export const getServerSideProps: GetServerSideProps = async() => {
-  return {
-    props: {
-      any,
+export async function getServerSideProps() {
+    const response = await fetch ('url')
+    const data = await response.json()
+
+    return {
+        props: {
+            dados: dados,
+        }
     }
-  }
 }
 ```
+
 > Todo o código dentro da function getServerSideProps será executado dentro do servidor node.
 
 <b>SSG (Static Site Genaration)</b>: O SSG passa por um processo bem semelhante do SSR, porem em suas ultimas etapas, ele cria um arquivo HTML estático que ficará salvo e é servido para um próximo acesso no client. Menos dinâmico e mais performático SSG é usado majoritariamente quando é necessário indexação e também gerar um HTML para muitos acessos. EX: Home de um blog.
@@ -58,16 +72,19 @@ export const getServerSideProps: GetServerSideProps = async() => {
 Exemplo:
 
 ```bash
-import {GetStaticProps} from 'next'
 
-export const getStaticProps: GetStaticProps = async() => {
-  return {
-    props: {
-      any,
-    },
-    revalidate: tempo.
-  }
+export async function getStaticProps() {
+    const response = await fetch ('url')
+    const data = await response.json()
+
+    return {
+        props: {
+            dados: dados,
+        },
+        revalidate: 60 * 60 * 8,
+    }
 }
+
 ```
 
 > O revalidate é a cadência em tempo que o Next vai salvar o novo HTML para servir ao client.
@@ -118,6 +135,34 @@ Após a instalação desses pacotes, basta alterar os arquivos para ts ou tsx.
 <h3>E a estilização?</h3>
 
 O ideal é proporcionar aos projetos a estratégia de botar as estilizações em um escopo, justamente para evitar possíveis interferências. Então é necessário utilizar de uma funcionalidade nativa do <b>Next.js</b>, que atribuí um hash único ao elemento: <b>CSS modules</b> com um pré-processador <b>SASS</b>.
+
+<br>
+<hr>
+
+<h3>API roots?</h3>
+
+A API Routes permite criar API com NextJS, onde o NodeJS consegue roda por baixo dos panos, proporcionando assim uma maior segurança para o tratamento de dados.
+Para isso é necessário que nossa API esteja na pasta pages dentro da pasta api.
+Exemplo: /pages/api/users.ts 
+
+```bash
+
+import { NextApiRequest, NextApiResponse} from 'next';
+
+export default (request: NextApiRequest, response: NextApiResponse) => {
+    const users = [
+        {id: 1, name: 'Caio'},
+        {id: 2, name: 'Caiow'},
+        {id: 3, name: 'Caioz'},
+    ]
+
+    return response.json(users)
+}
+
+```
+Agora você consegue acessar esse "backend" da camada do Next pela rota '/api/users'.
+
+> Porque o arquivo é .ts e não .tsx? Lembre-se arquivos tsx são usados quando queremos usar elementos JSX.
 
 <br>
 <hr>
