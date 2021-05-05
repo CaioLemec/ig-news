@@ -167,6 +167,172 @@ Agora você consegue acessar esse "backend" da camada do Next pela rota '/api/us
 <br>
 <hr>
 
+## Configuração dos serviços externos:
+
+<b>Ignews</b> é um app JAMStack que utiliza [FaunaDB](https://fauna.com/), [Stripe](https://stripe.com/br) e [Prismic](https://prismic.io/) para seu funcionamento.
+
+> JAMStack = Arquitetura de desenvolvimento web moderna baseada em JavaScript do lado do cliente, APIs reutilizáveis e marcação pré-construída. Você pode checar mais informações acessando: [JAMStack](https://jamstack.org/).
+
+<hr>
+
+<h3><b>Stripe</b>:</h3>
+
+<b>Stripe</b> é uma plataforma de pagamentos, que permite usuários realizarem pagamentos via cartão de crédito.
+
+Após acessar o site e criar sua conta, vá até `Products` e adicione um produto de teste.
+
+Você vai editar os seguintes campos:
+
+```bash
+Name: Subscription 
+Price: 9,90 - USD - Recurring
+Billing Period: Monthly 
+```
+
+Para customizar a página que redireciona o usuário ao pagamento basta acessar: `settings -> branding`.
+
+Você pode testar pagamentos com base no link: https://stripe.com/docs/testing
+
+<hr>
+<br>
+
+<h3><b>FaunaDB</b>:</h3>
+
+<b>FaunaDB</b> é um banco de dados muito utilizado em projetos serveless.
+
+Após acessar o site e criar sua conta, crie uma nova base de dados seguindo a tabela:
+
+<p align="center">
+<img src="./public/extras/faunadb.gif" width="65%" height="65%" />
+</p>
+
+<b>Collections</b>:
+
+```bash
+  {
+    name: "subscriptions",
+    history_days: 30,
+    ttl_days: null
+  }
+
+  {
+    name: "users",
+    history_days: 30,
+    ttl_days: null
+  }
+  ```
+
+  <b>Index</b>:
+
+```bash
+  {
+    name: "subscriptions",
+    history_days: 30,
+    ttl_days: null
+  }
+
+  {
+    name: "subscription_by_id",
+    unique: false,
+    serialized: true,
+    source: "subscriptions",
+    terms: [
+      {
+        field: ["data", "id"]
+      }
+    ]
+  }
+
+  {
+    name: "subscription_by_status",
+    unique: false,
+    serialized: true,
+    source: "subscriptions",
+    terms: [
+      {
+        field: ["data", "status"]
+      }
+    ]
+  }
+
+  {
+    name: "subscription_by_user_ref",
+    unique: false,
+    serialized: true,
+    source: "subscriptions",
+    terms: [
+      {
+        field: ["data", "userId"]
+      }
+    ]
+  }
+
+  {
+    name: "user_by_email",
+    unique: true,
+    serialized: true,
+    source: "users",
+    terms: [
+      {
+        field: ["data", "email"]
+      }
+    ]
+  }
+
+  {
+    name: "user_by_stripe_customer_id",
+    unique: false,
+    serialized: true,
+    source: "users",
+    terms: [
+      {
+        field: ["data", "stripe_customer_id"]
+      }
+    ]
+  }
+  ```
+
+<hr>
+<br>
+
+<h3><b>Prismic</b>:</h3>
+
+Após criar sua conta e seu repositório, vá até a aba `custom types` e crie uma nova deixando selecionado `Repeatable Type` e entrando com o nome `post`:
+
+<p align="center">
+<img src="./public/extras/prismic1.gif" width="65%" height="65%" />
+</p>
+
+Agora você deve construir o elemento:
+
+Arraste UID para o campo de construção:
+```bash
+Field name: UID
+```
+Arraste Title field para o campo de construção:
+```bash
+Field name: Title
+API ID: title
+Deixe o campo h1 selecionado.
+```
+
+Arraste Rich Text field para o campo de construção:
+```bash
+Field name: Content
+API ID: content
+Deixe todos os campos selecionados.
+```
+
+<p align="center">
+<img src="./public/extras/prismic2.gif" width="65%" height="65%" />
+</p>
+
+
+Após esses passos será possível adicionar novos posts a aplicação. Para isso, basta ir na aba `documents` e adicionar o conteúdo. 😇
+
+<hr>
+<br>
+
 
 
 
