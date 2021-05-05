@@ -42,17 +42,20 @@ Desenvolvendo essa aplicação foi possível aprofundar conhecimentos em:
 - Axios.
 
 <hr>
-Um sistema de autenticação via Github é necessário e para isso foi utilizado [NextAuth](https://next-auth.js.org/getting-started/example).
+Um sistema de autenticação via Github é necessário e para isso foi utilizado [NextAuth.js](https://next-auth.js.org/getting-started/example/)
+<br>
 
 [FaunaDB](https://fauna.com/) foi escolhido como banco de dados pois atende bem aplicações serverless.
+<br>
 
 O cliente que contrata o serviço, realiza um pagamento mensal via [Stripe](https://stripe.com/br) e pode desfrutar dos benefícios pelo tempo que desejar a continuidade da assinatura.
+<br>
 
 Através do [Prismic](https://prismic.io/) CMS, é possível gerenciar conteúdo de forma simples e intuitiva.
 <hr>
 
 >Você pode conferir algumas anotações no arquivo [notes](./notes.md).
-><br>
+<br>
 >`Alerta:` Por conta de alguns recursos na estilização não é recomendado utilizar IE 6-8 como browser ao utilizar essa aplicação.
 
 <hr>
