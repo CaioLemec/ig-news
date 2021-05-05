@@ -52,9 +52,9 @@ O cliente que contrata o serviço, realiza um pagamento mensal via [Stripe](http
 Através do [Prismic](https://prismic.io/) CMS, é possível gerenciar conteúdo de forma simples e intuitiva.
 <hr>
 
->Você pode conferir algumas anotações no arquivo [notes](./notes.md).
-<br>
->`Alerta:` Por conta de alguns recursos na estilização não é recomendado utilizar IE 6-8 como browser ao utilizar essa aplicação.
+>Você pode conferir algumas anotações no arquivo [notes](./notes.md). <br>
+
+> `Alerta:` Por conta de alguns recursos na estilização não é recomendado utilizar IE 6-8 como browser ao utilizar essa aplicação.
 
 <hr>
 <br>
@@ -63,9 +63,12 @@ Através do [Prismic](https://prismic.io/) CMS, é possível gerenciar conteúdo
 <p align="center">
 <img src="./public/extras/ignews1.gif" width="65%" height="65%" />
 <img src="./public/extras/ignews2.gif" width="65%" height="65%" />
+<br>
+<br>
+Você pode verificar o layoult desenvolvido por [@TiagoLuchtenberg](https://www.instagram.com/tiagoluchtenberg/?hl=pt-br) acessando o [FIGMA](https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2).
 </p>
 
-Você pode verificar o layoult desenvolvido por [@TiagoLuchtenberg](https://www.instagram.com/tiagoluchtenberg/?hl=pt-br) acessando o [FIGMA](https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2).
+
 
 
 <br>
