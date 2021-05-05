@@ -10,8 +10,6 @@
   <a href="#bookmark_tabs-licença"><img src="https://img.shields.io/static/v1?label=&message=LICENSE&color=8257E5&style=for-the-badge&logo=LibreOffice"/></a>&nbsp;
 </p>
 
-<br>
-
 <p align="center">
  <img alt="tela demonstrando aplicação" src="./public/extras/mockup.png" width="65%">
 </p>
@@ -23,17 +21,8 @@
 
 <strong>Ignews</strong> é um serviço de assinatura que disponibiliza aos usuários determinado conteúdo. 
 
-Um sistema de autenticação via Github é necessário e para isso foi utilizado [NextAuth.js](https://next-auth.js.org/getting-started/example).
-
-[FaunaDB](https://fauna.com/) foi escolhido como banco de dados pois atende bem aplicações serveless.
-
-O cliente que contrata o serviço, realiza um pagamento mensal via [Stripe](https://stripe.com/br) e pode desfrutar dos benefícios pelo tempo que desejar a continuidade da assinatura.
-
-Através do CMS [Prismic](https://prismic.io/), é possível gerenciar conteúdo de forma simples e intuitiva.
-
 Esta aplicação foi criada com o intuito de aprofundar conhecimentos em front-end no curso Ignite da [@Rocketseat](https://app.rocketseat.com.br/).
 
->`Alerta:` Por conta de alguns recursos na estilização não é recomendado utilizar IE 6-8 como browser ao utilizar essa aplicação.
 
 Desenvolvendo essa aplicação foi possível aprofundar conhecimentos em: 
 <br>
@@ -52,7 +41,19 @@ Desenvolvendo essa aplicação foi possível aprofundar conhecimentos em:
 - css-modules & SASS,
 - Axios.
 
+<hr>
+Um sistema de autenticação via Github é necessário e para isso foi utilizado [NextAuth.js](https://next-auth.js.org/getting-started/example).
+
+[FaunaDB](https://fauna.com/) foi escolhido como banco de dados pois atende bem aplicações serveless.
+
+O cliente que contrata o serviço, realiza um pagamento mensal via [Stripe](https://stripe.com/br) e pode desfrutar dos benefícios pelo tempo que desejar a continuidade da assinatura.
+
+Através do CMS [Prismic](https://prismic.io/), é possível gerenciar conteúdo de forma simples e intuitiva.
+<hr>
+
 >Você pode conferir algumas anotações no arquivo [notes](./notes.md).
+><br>
+>`Alerta:` Por conta de alguns recursos na estilização não é recomendado utilizar IE 6-8 como browser ao utilizar essa aplicação.
 
 <hr>
 <br>
