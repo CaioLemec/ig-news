@@ -23,10 +23,6 @@
 
 <strong>Ignews</strong> é um serviço de assinatura que disponibiliza aos usuários determinado conteúdo. 
 
-Um app JAMStack que utiliza [FaunaDB](https://fauna.com/), [Stripe](https://stripe.com/br) e [Prismic](https://prismic.io/) para seu funcionamento.
-
-> JAMStack = Arquitetura de desenvolvimento web moderna baseada em JavaScript do lado do cliente, APIs reutilizáveis e marcação pré-construída. Você pode checar mais informações acessando: [JAMStack](https://jamstack.org/).
-
 Um sistema de autenticação via Github é necessário e para isso foi utilizado [NextAuth.js](https://next-auth.js.org/getting-started/example).
 
 [FaunaDB](https://fauna.com/) foi escolhido como banco de dados pois atende bem aplicações serveless.
@@ -37,7 +33,7 @@ Através do CMS [Prismic](https://prismic.io/), é possível gerenciar conteúdo
 
 Esta aplicação foi criada com o intuito de aprofundar conhecimentos em front-end no curso Ignite da [@Rocketseat](https://app.rocketseat.com.br/).
 
->`Alerta:` Por conta de alguns recursos na estilização não é recomendado utilizar IE 6-8 como browser.
+>`Alerta:` Por conta de alguns recursos na estilização não é recomendado utilizar IE 6-8 como browser ao utilizar essa aplicação.
 
 Desenvolvendo essa aplicação foi possível aprofundar conhecimentos em: 
 <br>
@@ -63,8 +59,8 @@ Desenvolvendo essa aplicação foi possível aprofundar conhecimentos em:
 
 ## :nail_care: Layout
 <p align="center">
-<img src="./public/extras/exemple1.gif" width="65%" height="65%" />
-<img src="./public/extras/exemple2.gif" width="65%" height="65%" />
+<img src="./public/extras/ignews1.gif" width="65%" height="65%" />
+<img src="./public/extras/ignews2.gif" width="65%" height="65%" />
 </p>
 
 
@@ -138,7 +134,7 @@ yarn dev
 yarn build   
 ```
 
-8. acesse o endereço em um browser compatível:
+8. Acesse o endereço em um browser compatível:
 
 ```bash
 http://localhost:3000/
