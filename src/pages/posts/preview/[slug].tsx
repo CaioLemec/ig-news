@@ -71,6 +71,15 @@ export const getStaticProps: GetStaticProps = async ({  params }) => {
 
   const response = await prismic.getByUID('post', String(slug), {});
 
+  if (!response) {
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false
+      }
+    }
+  }
+
   const post = {
     slug,
     title: RichText.asText(response.data.title),
