@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="logo" title="Ignews" src="./public/images/logo.svg" width="50%" />
+    <img alt="logo" title="Ignews" src="./public/images/logo.svg" width="45%" />
 </h1>
 
 <p align="center">
@@ -42,13 +42,13 @@ Desenvolvendo essa aplicação foi possível aprofundar conhecimentos em:
 - Axios.
 
 <hr>
-Um sistema de autenticação via Github é necessário e para isso foi utilizado [NextAuth.js](https://next-auth.js.org/getting-started/example).
+Um sistema de autenticação via Github é necessário e para isso foi utilizado [NextAuth](https://next-auth.js.org/getting-started/example).
 
-[FaunaDB](https://fauna.com/) foi escolhido como banco de dados pois atende bem aplicações serveless.
+[FaunaDB](https://fauna.com/) foi escolhido como banco de dados pois atende bem aplicações serverless.
 
 O cliente que contrata o serviço, realiza um pagamento mensal via [Stripe](https://stripe.com/br) e pode desfrutar dos benefícios pelo tempo que desejar a continuidade da assinatura.
 
-Através do CMS [Prismic](https://prismic.io/), é possível gerenciar conteúdo de forma simples e intuitiva.
+Através do [Prismic](https://prismic.io/) CMS, é possível gerenciar conteúdo de forma simples e intuitiva.
 <hr>
 
 >Você pode conferir algumas anotações no arquivo [notes](./notes.md).
