@@ -63,8 +63,6 @@ Desenvolvendo essa aplicação foi possível aprofundar conhecimentos em:
 <img src="./public/extras/ignews2.gif" width="65%" height="65%" />
 </p>
 
-
-Você pode verificar essa web aplicação funcionando acessando o [link](https://ig-news-two.vercel.app/). <br>
 Você pode verificar o layoult desenvolvido por [@TiagoLuchtenberg](https://www.instagram.com/tiagoluchtenberg/?hl=pt-br) acessando o [FIGMA](https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2).
 
 
