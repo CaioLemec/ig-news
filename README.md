@@ -7,7 +7,7 @@
   <a href="#nail_care-layout"><img src="https://img.shields.io/static/v1?label=&message=LAYOULT&color=8257E5&style=for-the-badge&logo=CSS3"/></a>&nbsp;
   <a href="#technologist-tecnologias"><img src="https://img.shields.io/static/v1?label=&message=TECNOLOGIAS&color=8257E5&style=for-the-badge&logo=Jamstack"/></a>
   <a href="#octocat-ambiente"><img src="https://img.shields.io/static/v1?label=&message=AMBIENTE&color=8257E5&style=for-the-badge&logo=visual-studio-code"/></a>&nbsp;
-  <a href="#bookmark_tabs-license"><img src="https://img.shields.io/static/v1?label=&message=LICENSE&color=8257E5&style=for-the-badge&logo=LibreOffice"/></a>&nbsp;
+  <a href="#bookmark_tabs-licença"><img src="https://img.shields.io/static/v1?label=&message=LICENSE&color=8257E5&style=for-the-badge&logo=LibreOffice"/></a>&nbsp;
 </p>
 
 <br>
@@ -64,7 +64,7 @@ Desenvolvendo essa aplicação foi possível aprofundar conhecimentos em:
 </p>
 
 
-Você pode verificar essa web aplicação funcionando acessando [Deploy](VERCELLLLLL). <br>
+Você pode verificar essa web aplicação funcionando acessando o [link](https://ig-news-two.vercel.app/). <br>
 Você pode verificar o layoult desenvolvido por [@TiagoLuchtenberg](https://www.instagram.com/tiagoluchtenberg/?hl=pt-br) acessando o [FIGMA](https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2).
 
 
