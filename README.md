@@ -63,8 +63,9 @@ Através do [Prismic](https://prismic.io/) CMS, é possível gerenciar conteúdo
 <p align="center">
 <img src="./public/extras/ignews1.gif" width="65%" height="65%" />
 <img src="./public/extras/ignews2.gif" width="65%" height="65%" />
-<br>
-<br>
+</p>
+
+<p align="center">
 Você pode verificar o layoult desenvolvido por [@TiagoLuchtenberg](https://www.instagram.com/tiagoluchtenberg/?hl=pt-br) acessando o [FIGMA](https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2).
 </p>
 
