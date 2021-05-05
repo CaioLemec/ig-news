@@ -42,7 +42,7 @@ Desenvolvendo essa aplicação foi possível aprofundar conhecimentos em:
 - Axios.
 
 <hr>
-Um sistema de autenticação via Github é necessário e para isso foi utilizado [NextAuth.js](https://next-auth.js.org/getting-started/example/)
+Um sistema de autenticação via Github é necessário e para isso foi utilizado [NextAuth.js](https://next-auth.js.org/getting-started/example).
 <br>
 
 [FaunaDB](https://fauna.com/) foi escolhido como banco de dados pois atende bem aplicações serverless.
