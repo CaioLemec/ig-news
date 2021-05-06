@@ -161,7 +161,7 @@ Projeto licenciado por MIT [LICENSE](./LICENSE).
 Fico à disposição para qualquer esclarecimento.
 
 <img style="border-radius: 30%;" src="https://avatars3.githubusercontent.com/u/59886891?s=460&v=4" width="75px;"/>
-<h3>Caio Lemec<h3>
+<h3 style='color:1F2729'>Caio Lemec<h3>
 <a href="https://t.me/caiolemec"><img src="https://img.shields.io/badge/Telegram-1F2729?style=for-the-badge&logo=telegram&logoColor=white"/>
 <a href="mailto:caiolemec@gmail.com"><img src="https://img.shields.io/static/v1?label=&message=E-mail&color=1F2729&style=for-the-badge&logo=Gmail"/>
 <a href="https://www.linkedin.com/in/caiolemec/"><img src="https://img.shields.io/static/v1?label=&message=LinkedIn&color=1F2729&style=for-the-badge&logo=linkedin"/>
