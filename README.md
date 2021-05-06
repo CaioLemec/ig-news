@@ -3,11 +3,11 @@
 </h1>
 
 <p align="center">
-  <a href="#desktop_computer-projeto"><img src="https://img.shields.io/static/v1?label=&message=PROJETO&color=#1f2729&style=for-the-badge&logo=Next.js"/></a>&nbsp;
-  <a href="#nail_care-layout"><img src="https://img.shields.io/static/v1?label=&message=LAYOULT&color=#1f2729&style=for-the-badge&logo=CSS3"/></a>&nbsp;
-  <a href="#technologist-tecnologias"><img src="https://img.shields.io/static/v1?label=&message=TECNOLOGIAS&color=#1f2729&style=for-the-badge&logo=Jamstack"/></a>
-  <a href="#octocat-ambiente"><img src="https://img.shields.io/static/v1?label=&message=AMBIENTE&color=#1f2729&style=for-the-badge&logo=visual-studio-code"/></a>&nbsp;
-  <a href="#bookmark_tabs-licença"><img src="https://img.shields.io/static/v1?label=&message=LICENSE&color=#1f2729&style=for-the-badge&logo=LibreOffice"/></a>&nbsp;
+  <a href="#desktop_computer-projeto"><img src="https://img.shields.io/static/v1?label=&message=PROJETO&color=8257E5&style=for-the-badge&logo=Next.js"/></a>&nbsp;
+  <a href="#nail_care-layout"><img src="https://img.shields.io/static/v1?label=&message=LAYOULT&color=8257E5&style=for-the-badge&logo=CSS3"/></a>&nbsp;
+  <a href="#technologist-tecnologias"><img src="https://img.shields.io/static/v1?label=&message=TECNOLOGIAS&color=8257E5&style=for-the-badge&logo=Jamstack"/></a>
+  <a href="#octocat-ambiente"><img src="https://img.shields.io/static/v1?label=&message=AMBIENTE&color=8257E5&style=for-the-badge&logo=visual-studio-code"/></a>&nbsp;
+  <a href="#bookmark_tabs-licença"><img src="https://img.shields.io/static/v1?label=&message=LICENSE&color=8257E5&style=for-the-badge&logo=LibreOffice"/></a>&nbsp;
 </p>
 
 <p align="center">
@@ -162,8 +162,8 @@ Fico à disposição para qualquer esclarecimento.
 
 <img style="border-radius: 30%;" src="https://avatars3.githubusercontent.com/u/59886891?s=460&v=4" width="75px;"/>
 <h3>Caio Lemec<h3>
-<a href="https://t.me/caiolemec"><img src="https://img.shields.io/badge/Telegram-#1f2729?style=for-the-badge&logo=telegram&logoColor=white"/>
-<a href="mailto:caiolemec@gmail.com"><img src="https://img.shields.io/static/v1?label=&message=E-mail&color=#1f2729&style=for-the-badge&logo=Gmail"/>
-<a href="https://www.linkedin.com/in/caiolemec/"><img src="https://img.shields.io/static/v1?label=&message=LinkedIn&color=#1f2729&style=for-the-badge&logo=linkedin"/>
+<a href="https://t.me/caiolemec"><img src="https://img.shields.io/badge/Telegram-8257E5?style=for-the-badge&logo=telegram&logoColor=white"/>
+<a href="mailto:caiolemec@gmail.com"><img src="https://img.shields.io/static/v1?label=&message=E-mail&color=8257E5&style=for-the-badge&logo=Gmail"/>
+<a href="https://www.linkedin.com/in/caiolemec/"><img src="https://img.shields.io/static/v1?label=&message=LinkedIn&color=8257E5&style=for-the-badge&logo=linkedin"/>
 <br>
 </p>
