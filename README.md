@@ -152,7 +152,7 @@ stripe listen --forward-to localhost:3000/api/webhooks
 
 <br>
 
-Projeto licenciado por MIT [LICENSE](./LICENSE.md).
+Projeto licenciado por MIT [LICENSE](./LICENSE).
 
 <br>
 <hr>
