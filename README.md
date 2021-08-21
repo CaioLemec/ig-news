@@ -38,6 +38,7 @@ Desenvolvendo essa aplicação foi possível aprofundar conhecimentos em:
 - Integrações com API,
 - API routes,
 - Webwooks,
+- Testes com Jest,
 - css-modules & SASS,
 - Axios.
 
