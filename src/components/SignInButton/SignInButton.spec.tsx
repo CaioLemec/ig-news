@@ -22,7 +22,7 @@ describe('SignInButton component', () => {
 
         useSessionMocked.mockReturnValueOnce([
             { user: {name: 'John Doe', email: 'john.doe@exemple.com'}, expires: 'fake-expires' }, 
-            true]) 
+            false]) 
 
         render(<SignInButton />)
     
