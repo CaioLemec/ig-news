@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="#desktop_computer-projeto"><img src="https://img.shields.io/static/v1?label=&message=PROJETO&color=1F2729&style=for-the-badge&logo=Next.js"/></a>&nbsp;
-  <a href="#nail_care-layout"><img src="https://img.shields.io/static/v1?label=&message=LAYOULT&color=1F2729&style=for-the-badge&logo=CSS3"/></a>&nbsp;
+  <a href="#nail_care-layout"><img src="https://img.shields.io/static/v1?label=&message=LAYOUT&color=1F2729&style=for-the-badge&logo=CSS3"/></a>&nbsp;
   <a href="#technologist-tecnologias"><img src="https://img.shields.io/static/v1?label=&message=TECNOLOGIAS&color=1F2729&style=for-the-badge&logo=Jamstack"/></a>
   <a href="#octocat-ambiente"><img src="https://img.shields.io/static/v1?label=&message=AMBIENTE&color=1F2729&style=for-the-badge&logo=visual-studio-code"/></a>&nbsp;
   <a href="#bookmark_tabs-licença"><img src="https://img.shields.io/static/v1?label=&message=LICENSE&color=1F2729&style=for-the-badge&logo=LibreOffice"/></a>&nbsp;
@@ -66,7 +66,7 @@ Através do [Prismic](https://prismic.io/) CMS, é possível gerenciar conteúdo
 <img src="./public/extras/ignews2.gif" width="65%" height="65%" />
 </p>
 
-<h4 align="center">Você pode verificar o layoult desenvolvido por <a href="https://www.instagram.com/tiagoluchtenberg/?hl=pt-br">@TiagoLuchtenberg</a> acessando o <a href="https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2">FIGMA</a>.</h4>
+<h4 align="center">Você pode verificar o layout desenvolvido por <a href="https://www.instagram.com/tiagoluchtenberg/?hl=pt-br">@TiagoLuchtenberg</a> acessando o <a href="https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2">FIGMA</a>.</h4>
 
 <br>
 <br>
